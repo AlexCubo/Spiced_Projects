@@ -9,7 +9,7 @@ The population legend must be multiplied by 10 millions.
   <img src="./Life_expectancy_Fertility/p_movies/lifeFert_movie.gif" width="50%" height="50%">
   </p>
 
-The Jupyter notebook about this project can be found.
+The Jupyter notebook about this project can be found [here](./Life_expectancy_Fertility/animated_scatteredplot.ipynb)
 
 
 
