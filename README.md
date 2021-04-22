@@ -24,8 +24,21 @@ The Jupyter notebook about this project can be found [here](./Surviving_Titanic/
 
 I took part of the Kaggle competition "Titanic - Machine Leraning from disaster" [see here](https://www.kaggle.com/c/titanic/submissions)
 
+## Bike Rental
+The project is a regression progect. The goal is to predict the number of bikes rented in at any hour using ML regeression models. The features are timestamp and wheater information. Therefore it is a timeseries problem.
+
+I trained the data using different regressors: Linear Regression, Linear Regression with Ridge regularization, Random Forest and Gradient Boosting Regressor. For Random Forest I made a second training
+called RF_plus, where I added some additional features, just to see if I could improve the score.
+I compared these models with the  most popular regression scores: MSE (Mean Square Error), RMSLE (Root Mean Square Logarithmic Error) and $R^2$ score (Coefficient of Determination):
 
 
+<p align="center">
+  <img src="./Bike_Rental/images/models_comparison.png" width="100%" height="100%">
+  </p>
+
+The Jupyter notebook about this project can be found [here](./Bike_Rental/bike_sharing_project.ipynb)
+
+I took part of a Kaggle competition titled "Bike Sharing Demand - Forecast of a city bikeshare system". The results can be found [here](https://www.kaggle.com/c/bike-sharing-demand/submissions)
 
 
 
