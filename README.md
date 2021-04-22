@@ -22,6 +22,9 @@ I trained the data with Logistic Regression, Decision Tree and Random Forest and
 
 The Jupyter notebook about this project can be found [here](./Surviving_Titanic/project2_survivingTitanic.ipynb)
 
+I took part of the Kaggle competition "Titanic - Machine Leraning from disaster" [see here](https://www.kaggle.com/c/titanic/submissions)
+
+
 
 
 
