@@ -1,0 +1,13 @@
+ In this folder are the source file for the project npl.
+main_lyric_classifier: main to read the page of the artists, extrapolate the songs, clean them, vectorize and train
+			4 combinations are created: CountVec + LogReg, TfidfVec + LogReg, CountVec + RandFor, and TfidfVec + RandFor.
+		
+lyric_header: header file containing the functions used by main. The function extract_lyric_page is in range(10) just to avoid
+		to write too many songs in the ../data/data_raw/.
+ 
+predict_text: predict if a song snipped was written by one of the artists chosen in training. 
+		Usage: from command line launch with 2 arguments
+			First arg: cl, tl, cr, tr (for one of the for vec+classif combination)
+			Second argument: snippet (e.g: "True blue, baby I love you")
+
+
