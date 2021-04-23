@@ -25,7 +25,7 @@ The Jupyter notebook about this project can be found [here](./Surviving_Titanic/
 I took part of the Kaggle competition "Titanic - Machine Leraning from disaster" [see here](https://www.kaggle.com/c/titanic/submissions)
 
 ## Bike Rental
-The project is a regression progect. The goal is to predict the number of bikes rented in at any hour using ML regeression models. The features are timestamp and wheater information. Therefore it is a timeseries problem.
+The project is a regression project. The goal is to predict the number of bikes rented in at any hour using ML regeression models. The features are timestamp and wheater information. Therefore it is a timeseries problem.
 
 I trained the data using different regressors: Linear Regression, Linear Regression with Ridge regularization, Random Forest and Gradient Boosting Regressor. For Random Forest I made a second training
 called RF_plus, where I added some additional features, just to see if I could improve the score.
@@ -39,6 +39,24 @@ I compared these models with the  most popular regression scores: MSE (Mean Squa
 The Jupyter notebook about this project can be found [here](./Bike_Rental/bike_sharing_project.ipynb)
 
 I took part of a Kaggle competition titled "Bike Sharing Demand - Forecast of a city bikeshare system". The results can be found [here](https://www.kaggle.com/c/bike-sharing-demand/submissions)
+
+## Text Classification
+The aim of this project is to develop a machine learning that is able to recognize the author of a song by reading a snippet of the lyrics. The main steps to develop such ML are:  
+    1. Scrape artist pages to find lyrics links (I chose: Elton John, James Brown, Madonna)  
+    2. Extract lyrics from lyrics pages  
+    3. Model the lyric's text (I used Bag of Words + Spacy)  
+    4. Divide train data and verification data  
+    5. Use train data in a pipeline containing vectorizer and classifier (I used:: 2 vectorizer: CountVectorizer and TfidfVectorizer  and 2 classifiers: LogisticRegeression and RandomForestClassifier)  
+
+The confusion matrix on the validation data is:
+
+<p align="center">
+  <img src="./Text_Classification/images/confusion_matrix.png" width="30%" height="30%">
+  </p>
+
+The directory structure can be found [here](./Text_Classification/Text_Classification_README).  
+ In [src_README](./Text_Classification/src/src_README) is explained the meaning of the .py files
+in the src folder and the use of the ML for prediction.
 
 
 
