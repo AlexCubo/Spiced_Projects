@@ -1,0 +1,7 @@
+Project: text classification
+/src/ : folder containing the source files and a src_README
+/data/: folder containing the raw_data and processed_data. 
+	Please note that the subfolder should be empty and will be populated when running the main code in /src/
+	However I have already populated the processed_data subfolder in order to allow the user to use the 
+	npl classifiers I have trained with 1500 * 3 songs.
+For questions contact alessandro.cubeddu@yahoo.co.uk
