@@ -59,16 +59,16 @@ The directory structure can be found [here](./Text_Classification/Text_Classific
 in the src folder and the use of the ML for prediction.
 
 ## Dashboard
-This project is the first Data Engineering project in the bootcamp. The aim is to deploy a Matabase dashboard showing graphics and statistics which are created using data extrapolated from a postgreSQL database. The main steps to achieve the target are:
-    1. Create a local postgreSQL database in my machine
-    2. Download the data in .csv format from a source (I chose the default [Northwind](https://github.com/pawlodkowski/northwind_data_clean) database)
-    3. Create the SQL tables needed for the project and copy the data from Northwind tables to my local database
-    4. Create an account in AWS and instantiate a RDS database
-    5. Copy the local database tables into the remote AWS database
-    6. Create an Elastic Computer Server using the EC2 facility of AWS and create a SSH connection to my local machine (for access)
-    7. Install Metabase dashboard connection in my EC2 Server (now EC2 communicates with RDS for data source and with Metabase for data visualization)
-    8. Access to Metabase and create some interesting graphic using the Northwind data
-    9. Deploy Dashboard
+This project is the first Data Engineering project in the bootcamp. The aim is to deploy a Matabase dashboard showing graphics and statistics which are created using data extrapolated from a postgreSQL database. The main steps to achieve the target are:  
+    1. Create a local postgreSQL database in my machine  
+    2. Download the data in .csv format from a source (I chose the default [Northwind](https://github.com/pawlodkowski/northwind_data_clean) database)  
+    3. Create the SQL tables needed for the project and copy the data from Northwind tables to my local database  
+    4. Create an account in AWS and instantiate a RDS database  
+    5. Copy the local database tables into the remote AWS database  
+    6. Create an Elastic Computer Server using the EC2 facility of AWS and create a SSH connection to my local machine (for access)  
+    7. Install Metabase dashboard connection in my EC2 Server (now EC2 communicates with RDS for data source and with Metabase for data visualization)  
+    8. Access to Metabase and create some interesting graphic using the Northwind data  
+    9. Deploy Dashboard  
 
 The used dataset is about production, shipping, selling and delivery of food product to customers of a fictional company called Northwind Traders.
 
