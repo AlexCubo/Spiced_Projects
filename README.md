@@ -87,8 +87,8 @@ The overall aim is to deploy tweets in a slackbot together with a score [-1,1] r
         &nbsp;&nbsp;&nbsp;&nbsp;Extract: each tweet is taken from mongoDB  
         &nbsp;&nbsp;&nbsp;&nbsp;Transform: each tweet is analysed using a [Vader Sentiment Analysis](https://github.com/cjhutto/vaderSentiment)  
         &nbsp;&nbsp;&nbsp;&nbsp;Load: load tweets, authors and sentiment score in a postgres DB  
-    4. Docker container "postgres": the structured database is used to store tweets with sentiment score before to deply in bot  
-    5. Docker container "slackbot": In slack are deployed the extracted tweets with feeling score in a automated fashion (bot)  
+    4. Docker container "postgres": psql DB is used to store tweets with sentiment score before to deply them in bot  
+    5. Docker container "slackbot": In an automated fashion are are deployed in Slack the tweets with feeling score
 These steps are orchestrated by docker-compose that executes a docker-compose.yml file to concatenate all passages.  
 
 The docker-compose.yml and the subfolder used by the ETL_pipeline project can be found [here](./ETL_pipeline/pipeline)
