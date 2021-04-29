@@ -72,7 +72,26 @@ This project is the first Data Engineering project in the bootcamp. The aim is t
 
 The used dataset is about production, shipping, selling and delivery of food product to customers of a fictional company called Northwind Traders.
 
+## ETL_pipeline
+This is the second Data Engineering project. The goal is to setup a Docker pipeline to simulate the flow of information from the source to the final output. 
+The following figure shows the workflow for this project:
 
+<p align="center">
+  <img src="./ETL_pipeline/images/ETL_drawing.png" width="50%" height="50%">
+  </p>
+
+The overall aim is to deploy tweets in a slackbot together with a score [-1,1] representing the feeling expressed by the tweet (-1 means "very negative feeling" and 1 means "super positive feeling"). 
+    1. Docker container "tweets_collector": the tweets are read from Twitter using Twitter API and the pytweets library
+    2. Docker container "mongo": The extracted tweets are uploaded in a mongoDB database
+    3. Docker container "etl": 
+        Extract: each tweet is taken from mongoDB
+        Transform: each tweet is analysed using a [Vader Sentiment Analysis](https://github.com/cjhutto/vaderSentiment)
+        Load: load tweets, authors and sentiment score in a postgres DB
+    4. Docker container "postgres": the structured database is used to store tweets with sentiment score before to deply in bot
+    5. Docker container "slackbot": In slack are deployed the extracted tweets with feeling score in a automated fashion (bot)
+These steps are orchestrated by docker-compose that executes a docker-compose.yml file to concatenate all passages.
+
+The docker-compose.yml and the subfolder used by the ETL_pipeline project can be found [here](./ETL_pipeline/pipeline)
 
 
 
