@@ -1,0 +1,49 @@
+version: '3'
+services:
+# a list of docker containers
+
+  
+
+  # name of the service
+  my_mongodb:
+    image: mongo
+    ports:
+    - 27017:27017
+
+  tweet_collector:
+    # here we cannot use image because it doesn not exist in dockerhub
+    build: tweet_collector/
+    # -v host_path:guest_path
+    volumes:
+    - ./tweet_collector/src:/app
+    - ./logs:/log/
+    # first start the service 
+    depends_on:
+    - my_mongodb
+
+  my_postgres:
+    image: postgres
+    ports:
+    - 5435:5432
+    restart: always
+    environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=my_p0stgres
+    - POSTGRES_DB=psqlTweets
+
+  etl:
+    build: etl_job/
+    volumes:
+    - ./etl_job/src:/etl_code
+    - ./logs:/log/
+    - ./etl_job/vader_utils:/utils
+    depends_on:
+    - my_mongodb
+    - my_postgres
+
+  slack_bot:
+    build: slack_bot/
+    volumes:
+    - ./slack_bot/src:/slack
+    depends_on:
+    - my_postgres

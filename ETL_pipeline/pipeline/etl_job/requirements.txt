@@ -1,0 +1,6 @@
+pymongo
+pandas
+sqlalchemy
+psycopg2-binary
+vaderSentiment
+python-dotenv
