@@ -104,7 +104,7 @@ In this project the goal is to predict a time series in the feature given inform
 The Ridge model can predict the power consumption on the validation data with a mean absolute error (MAE) of 1415 MW, corresponding to an percentage error (smape)of 4.3%. 
 
 <p align="center">
-<img src="./Time_series/images/prediction.png" width="50%" height="50%">
+<img src="./Time_series/images/prediction.png" width="60%" height="60%">
 </p>
 
 The Jupyter notebook of this project can be found [here](./Time_series/energy_consumption_Italy.ipynb)
@@ -125,6 +125,26 @@ doing shopping:
 </p>
 
 The file [README.md](./Markov_Chain/README.md) in the Markov_Chain folder explains in detail how to run the application. The codes can be found [here](./Markov_Chain/src/).
+
+## Image recognition
+The goal of this project is to develop a convolutional neural network (CNN) architecture able to recognize different objects. It is a classification problem in which we chose 7 different category objects: apple, knife, locher, orange, pencil, pumpkin, tomato. We made many pictures of each category, trying to change perspectives, object, environment in order to make the category not so easy to recognize (for an ANN). The pictures are saved in [data](./Image_recognition/data).  
+I trained 4 different models and made a comparison. The models are:
+1. Logistic regression model (easy, fast and powerful)  
+2. Dense ANN (3 hidden layer of 256, 128, and 64 neurons respectivelly. Between layer I used a batchNormalization. As Activation I used LeakyReLu)  
+3. CNN (Conv2D_64neurons -> MaxPool -> Conv2D_16neurons -> MaxPool -> Conv2D_32neurons -> MaxPool -> Flatten -> Dense_16neurons -> BatchNormalization -> LeakyReLu -Dense_7neurons(SoftMax))  
+4. Keras mobilnet_v2 CNN + dense ([mobilenet_v2](https://keras.io/api/applications/mobilenet/#mobilenetv2-function) is a 14Mb CNN already trained and available at the Keras website (along many other and more complex CNN bases); the dense layer added to the mobilenet_v2 consists in a 16 neuron dense layer followed by a dropout and a dense final categorical layer (7 neurons with softmax activation))  
+
+The following graphics show the performances of the 4 models:
+
+ 
+<p align="center">
+<img src="./Image_recognition/images/model_comparison.png" width="60%" height="60%">
+</p>
+
+The Jupyter notebook of this project can be found [here](./Image_recognition/object_classifier.ipynb)
+
+
+
 
 
 
