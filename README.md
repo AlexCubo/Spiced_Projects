@@ -111,18 +111,22 @@ The Jupyter notebook of this project can be found [here](./Time_series/energy_co
 
 ## Markov Chain simulation
 In this project I worked in team with two good mates. The aim is to simulate the shopping behaviour of the clients of an hypotetical food market using the Markov Chain Method. The starting points are .csv files where are recorded the past behaviours of customers:  
-&nbsp;&nbsp;The behaviour of the clients in the supuermarket is given for 5 days in the past (monday.csv to friday.csv)  
-&nbsp;&nbsp;The behaviour of a client consists in a sesquence of states. Each state is a food area in the supermarket  
-&nbsp;&nbsp;The states (i.e. food areas) are: "fruit", "spices", "drinks", "dairy", "checkout"  
-&nbsp;&nbsp;The customer can move freely from one state to another several times and can stay several minutes in the same state  
-&nbsp;&nbsp;When the customer arrives to the "checkout" state she finishes the shopping ("checkout" is an absorbing state).  
-The file [README.md](./Markov_Chain/README.md) in the Markov_Chain folder explains in detail how to run the application.
+&ndash; &nbsp;&nbsp;The behaviour of the clients in the supuermarket is given for 5 days in the past (monday.csv to friday.csv)  
+&ndash; &nbsp;&nbsp;The behaviour of a client consists in a sesquence of states. Each state is a food area in the supermarket  
+&ndash; &nbsp;&nbsp;The states (i.e. food areas) are: "fruit", "spices", "drinks", "dairy", "checkout"  
+&ndash; &nbsp;&nbsp;The customer can move freely from one state to another several times and can stay several minutes in the same state  
+&ndash; &nbsp;&nbsp;When the customer arrives to the "checkout" state she finishes the shopping ("checkout" is an absorbing state).  
+  
 The final result is a graphical (and funny) representation of the market in style eighties where the clients move from one state to the other
 doing shopping:
 
 <p align="center">
-<img src="./Markov_Chain/img/marcomarkt.png" width="20%" height="20%">
+<img src="./Markov_Chain/img/marcomarkt.png" width="30%" height="30%">
 </p>
+
+The file [README.md](./Markov_Chain/README.md) in the Markov_Chain folder explains in detail how to run the application. The codes can be found [here](./Markov_Chain/src/).
+
+
 
 
 
