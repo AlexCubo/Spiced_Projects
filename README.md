@@ -94,7 +94,7 @@ These steps are orchestrated by docker-compose that executes a docker-compose.ym
 The docker-compose.yml and the subfolder used by the ETL_pipeline project can be found [here](./ETL_pipeline/pipeline)
 
 ## Time series
-In this project the goal is to predict a time series in the feature given information in the past. I chose a kaggle time series concerning the power consumption in west countries in the last 5-6 years (dataset [here](https://www.kaggle.com/francoisraucent/western-europe-power-consumption)). Amongs all available countries I chose Italy, which is my home contry. The signal is a time series about electrical power abosorbtion (in Megawatts) in Italy from 2015 to 2020, given hour by hour. I did the following steps: 
+In this project the goal is to predict a time series in the future given information in the past. I chose a kaggle time series concerning the power consumption in west countries in the last 5-6 years (dataset [here](https://www.kaggle.com/francoisraucent/western-europe-power-consumption)). Amongs all available countries I chose Italy, which is my home contry. The signal is a time series about electrical power abosorbtion (in Megawatts) in Italy from 2015 to 2020, given hour by hour. I did the following steps: 
 1. Data analysis and data wrangling to discover time sesonalities and "hidden" information  
 2. Divide data into training and verification sets  
 3. Perform a feature engineering (OneHotEncoder, KBin, Polyfeature) adding an additional feature, i.e holidays  
