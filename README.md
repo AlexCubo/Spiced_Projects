@@ -77,7 +77,7 @@ This is the second Data Engineering project. The goal is to setup a Docker pipel
 The following figure shows the workflow for this project:
 
 <p align="center">
-  <img src="./ETL_pipeline/images/ETL_drawing.png" width="50%" height="50%">
+  <img src="./ETL_pipeline/images/ETL_drawing.png" width="70%" height="70%">
   </p>
 
 The overall aim is to deploy tweets in a slackbot together with a score [-1,1] representing the feeling expressed by the tweet (-1 means "very negative feeling" and 1 means "super positive feeling").  
